@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data with a Choropleth Map</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 id='title'>United States Adult Education</h1>
+    <h2 id='description'>Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</h2>
+    <svg id='canvas'></svg>
+    <div id='tooltip'></div>
+    <svg id='legend'>
+      <g>
+        <rect x="10" y="0" width="40" height="40" fill="#00D6BB"></rect>
+        <text x="60" y="25">Less than 16%</text>
+      </g>
+      <g>
+          <rect x="10" y="40" width="40" height="40" fill="#00B7C5"></rect>
+          <text x="60" y="65">16% than 32%</text>
+      </g>
+      <g>
+          <rect x="10" y="80" width="40" height="40" fill="#0095C3"></rect>
+          <text x="60" y="105">32% to 48%</text>
+      </g>
+      <g>
+          <rect x="10" y="120" width="40" height="40" fill="#0072B0"></rect>
+          <text x="60" y="145">48% to 64%</text>
+      </g>
+      <g>
+        <rect x="10" y="160" width="40" height="40" fill="#274F8F"></rect>
+        <text x="60" y="185">64% to 80%</text>
+      </g>  
+      <g>
+        <rect x="10" y="200" width="40" height="40" fill="#422C64"></rect>
+        <text x="60" y="225">More than 80%</text>
+      </g>     
+    </svg>
+  </body>
+  <script defer src='index.js'></script>
+  <script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>

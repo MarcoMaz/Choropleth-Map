@@ -1,0 +1,44 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: #CEE6F2;
+  color: #422C64;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  justify-content: center;
+}
+
+svg {
+  background-color: #C4FCF0;
+}
+
+#canvas {
+  min-height: 600px;
+  min-width: 1000px;
+}
+
+#tooltip{
+  background-color: #745A97;
+  border-radius: 5px;
+  color: #FBEAFF;
+  position: absolute;  
+  padding: 15px;
+  text-align: center;
+  visibility: hidden;
+}
+
+#legend {
+  min-height: 250px;
+}
+
+#legend g text {
+  fill: #422C64;
+}
+
+path:hover {
+  fill: #745A97;
+}
